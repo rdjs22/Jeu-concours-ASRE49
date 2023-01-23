@@ -1,0 +1,53 @@
+*, html, body {
+    font-family: Verdana, Arial, sans-serif;
+	font-size: 3vmin;
+	line-height: 1.3em;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/*---------------- Questions ---------------*/
+fieldset {
+    background-color: rgb(147, 238, 238);
+
+}
+
+.form-control {
+    /*display: none;*/
+    /*display: inline-grid;*/
+    display: block;
+    /*grid-template-columns: auto auto;
+    gap: 0.1em;*/
+}
+
+input[type="checkbox"] {
+    /* Cacher checkbox originale*/
+    -webkit-appearance: none;
+    appearance: none;  
+    background-color: rgb(255, 255, 255);/* For iOS < 15 to remove gradient background */
+    margin: 0em;
+    /*custom checkbox non sélectionnées */
+    width: 1em;
+    height: 1em;
+    border: 0.14em solid ;
+    border-radius: 0.15em;
+    /*transform: translateY(0.15em);/*Alligner la boite et le label*/
+    /*display: block;*/
+    /*place-content: center;*/
+}
+input[type="checkbox"]:hover {
+    background-color: rgb(212, 247, 255);
+}
+
+/*custom checkbox sélectionnée*/
+input[type="checkbox"]:checked {
+    /*content: "";
+    width: 1em;  /*taille du symbole check*/
+    /*height: 1em;
+    transform: scale(0); /*0 = caché*/
+    /*box-shadow: inset 1em 1em var(--form-control-color);*/
+    /*border-radius: 0.13em;*/
+    background-color: rgb(180, 55, 151);
+}

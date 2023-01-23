@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+	<meta name="author" content="Inès Meriel-Bussy, Roxane Desjames">
+    <meta name="keywords" content="ASRE49, concours, questionnaire">
+	<meta name="description" content="Questionnaire du concours sécurité routière 2023 de l'ASRE49.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main.css">
+    <title>ASRE49 - Questionnaire</title>
+</head>
+<body>
+    <header>
+        <h1>Concours sécurité routière ASRE49</h1>
+    </header>
+    <form id="formulaire">
+        <label >Nom</label>
+        <input type ="text" name="nom" id="nom">
+        
+        <label>Prénom</label>
+        <input type ="text" name="prenom" id="prenom">
+        
+        <label >Entreprise</label>
+        <select id="entreprise" name="entreprise">
+            <option value="Base">-- Selectionner --</option>
+            <option value="A">Entreprise A</option>
+            <option value="B">Entrep B</option>
+            <option value="C">Entrep C</option>
+            <option value="D">Entrep D</option>
+        </select>
+
+        <fieldset>
+            <p>Question choix multiples</p>
+            <label class="form-control">
+                <input type="checkbox" id="A" name="R1" value="A">
+                Réponse A
+            </label>
+            <label class="form-control">
+                <input type="checkbox" id="B" name="R2" value="B">
+                Réponse B
+            </label>
+            <label class="form-control">
+                <input type="checkbox" id="C" name="R3" value="C">
+                Réponse C
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <p>Question choix unique</p>
+            <input type="radio" id="D" name="unique" value="D">
+            <label for="D">Réponse D</label>
+            <input type="radio" id="E" name="unique" value="E">
+            <label for="E">Réponse E</label>
+            <input type="radio" id="F" name="unique" value="F">
+            <label for="F">Réponse F</label>
+        </fieldset>
+
+        <fieldset>
+            <p>Question text</p>
+            <label for="Q15">Question 15</label>
+            <input type="text" id="Q15" name="Q15">
+            
+        </fieldset>
+
+        <button type="submit" name="sauvegarder" id="sauvegarder">Sauvegarder</button>
+        <button type="submit" name="envoyer" id="envoyer">Valider les réponses</button>
+
+    </form>
+
+    <script type="text/javascript" src="https://code.jquerry.com/jquery-3.4.1.js"> </script>
+    <script type="text/javascript" src="jQuery.serializeObject.js" ></script>
+
+    <script type="text/javascript">
+        var $form=$('form#formulaire'), 
+        url = 'https://docs.google.com/spreadsheets/d/1TVfdOgKuvjYt5J-yz9NQy6nAi46kokzQFRXXhkkXql0/edit#gid=0'; 
+        
+        $('#envoyer').on('click', function(e) {
+            e.preventDefault(); 
+            var jqxhr = $.ajax(){
+                url:  "url", 
+                method: "GET", 
+                dataType: "json", 
+                data: $form.serializedObject()}.done(function(){
+
+                });
+                
+            });
+    
+    
+    </script>
+    
+</body>
+</html>
