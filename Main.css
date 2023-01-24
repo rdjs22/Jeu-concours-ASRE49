@@ -8,10 +8,45 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*------------- Renseignements -------------*/
+input[type=text], input[type=email], select {
+    padding: 0.3em;
+    margin:  0.3em 0em;
+    border: none;
+    border-bottom: 0.1em solid rgb(180, 55, 151);
+}
+input[type=text]:focus, input[type=email]:focus, select:focus {
+    outline: none;
+    background-color: rgb(243, 208, 235);
+}
+
+input[type=number] {
+    padding: 0.3em;
+    margin:  0.3em 0em;
+    border: none;
+    border-bottom: 0.1em solid rgb(180, 55, 151);
+}
+
 /*---------------- Questions ---------------*/
 fieldset {
-    background-color: rgb(147, 238, 238);
+    background-color: rgb(243, 208, 235);
+    margin: 0.5em 0.3em;
+    border: 0.3em double rgb(180, 55, 151);
+}
 
+.question {
+    font-size: 1.1em;
+}
+
+label {
+    display: block;
+    margin: 0.3em;
 }
 
 .form-control {
@@ -27,16 +62,28 @@ input[type="checkbox"] {
     /*custom checkbox non sélectionnées */
     width: 1em;
     height: 1em;
-    border: 0.14em solid ;
+    border: 0.14em solid rgb(180, 55, 151);
     border-radius: 0.15em;
 }
 input[type="checkbox"]:hover {
-    background-color: rgb(212, 247, 255);
+    background-color: rgb(243, 208, 235);
 }
 
 /*custom checkbox sélectionnée*/
 input[type="checkbox"]:checked {
     height: 1em;
-    border-color: yellow;
+    border-color: rgb(180, 55, 151);
+    background-color: rgb(180, 55, 151);
+}
+
+/*----------- Boutons ----------*/
+button {
+    background-color: rgb(243, 208, 235);
+    border: 0.15em solid rgb(180, 55, 151);
+    border-radius: 0.1em;
+    padding: 0.1em 0.3em;
+    margin: 0.3em;
+}
+button:hover {
     background-color: rgb(180, 55, 151);
 }
