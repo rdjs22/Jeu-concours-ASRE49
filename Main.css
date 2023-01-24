@@ -45,9 +45,11 @@ input[type="checkbox"]:hover {
 input[type="checkbox"]:checked {
     /*content: "";
     width: 1em;  /*taille du symbole check*/
-    /*height: 1em;
-    transform: scale(0); /*0 = caché*/
-    /*box-shadow: inset 1em 1em var(--form-control-color);*/
+    height: 1em;
+    /*transform: scale(0); /*0 = caché*/
+    box-shadow: inset 1em 1em var(--form-control-color);*/
     /*border-radius: 0.13em;*/
+    border-radius: 0.15em;
+    border-color: yellow;
     background-color: rgb(180, 55, 151);
 }

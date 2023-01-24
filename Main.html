@@ -19,7 +19,7 @@
         
         <label>Prénom</label>
         <input type ="text" name="prenom" id="prenom">
-        
+        <!---->
         <label >Entreprise</label>
         <select id="entreprise" name="entreprise">
             <option value="Base">-- Selectionner --</option>
@@ -61,7 +61,7 @@
             <input type="text" id="Q15" name="Q15">
             
         </fieldset>
-
+<!---->
         <button type="submit" name="sauvegarder" id="sauvegarder">Sauvegarder</button>
         <button type="submit" name="envoyer" id="envoyer">Valider les réponses</button>
 
@@ -72,22 +72,20 @@
 
     <script type="text/javascript">
         var $form=$('form#formulaire'), 
-        url = 'https://docs.google.com/spreadsheets/d/1TVfdOgKuvjYt5J-yz9NQy6nAi46kokzQFRXXhkkXql0/edit#gid=0'; 
-        
+        url = 'https://script.google.com/macros/s/AKfycbzgPVXIxjLMEzqehaoezd7wjrRFjRS2Jfx5PAYDC97otWQWQiAwJAb_IwVzSK9yn03mdw/exec'; 
+
         $('#envoyer').on('click', function(e) {
             e.preventDefault(); 
-            var jqxhr = $.ajax(){
+            var jqxhr = $.ajax({
                 url:  "url", 
                 method: "GET", 
                 dataType: "json", 
-                data: $form.serializedObject()}.done(function(){
+                data: $form.serializedObject()
+            }).done(function(){
 
-                });
-                
             });
-    
-    
-    </script>
+            });
+        </script>
     
 </body>
 </html>
