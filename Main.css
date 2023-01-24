@@ -15,11 +15,7 @@ fieldset {
 }
 
 .form-control {
-    /*display: none;*/
-    /*display: inline-grid;*/
     display: block;
-    /*grid-template-columns: auto auto;
-    gap: 0.1em;*/
 }
 
 input[type="checkbox"] {
@@ -33,9 +29,6 @@ input[type="checkbox"] {
     height: 1em;
     border: 0.14em solid ;
     border-radius: 0.15em;
-    /*transform: translateY(0.15em);/*Alligner la boite et le label*/
-    /*display: block;*/
-    /*place-content: center;*/
 }
 input[type="checkbox"]:hover {
     background-color: rgb(212, 247, 255);
@@ -43,13 +36,7 @@ input[type="checkbox"]:hover {
 
 /*custom checkbox sélectionnée*/
 input[type="checkbox"]:checked {
-    /*content: "";
-    width: 1em;  /*taille du symbole check*/
     height: 1em;
-    /*transform: scale(0); /*0 = caché*/
-    box-shadow: inset 1em 1em var(--form-control-color);*/
-    /*border-radius: 0.13em;*/
-    border-radius: 0.15em;
     border-color: yellow;
     background-color: rgb(180, 55, 151);
 }
