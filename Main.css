@@ -1,6 +1,6 @@
 *, html, body {
     font-family: Verdana, Arial, sans-serif;
-	font-size: 3vmin;
+	font-size: 2.5vmin;
 	line-height: 1.3em;
 }
 
@@ -8,13 +8,28 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+img {
+    height: 4em;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+}
+
 h1 {
     font-size: 1.5em;
     font-weight: normal;
     text-align: center;
+    margin: 2em;
 }
 
 /*------------- Renseignements -------------*/
+
+p:not(.question) {
+    font-size: 1.1em;
+    margin: 1.3em 0.3em 0.7em 0.3em;
+    border-bottom: 0.1em solid rgb(180, 55, 151);
+}
+
 input[type=text], input[type=email], select {
     padding: 0.3em;
     margin:  0.3em 0em;
@@ -35,9 +50,11 @@ input[type=number] {
 
 /*---------------- Questions ---------------*/
 fieldset {
+    display: inline-block;
+    min-width: 41vw;
     background-color: rgb(243, 208, 235);
-    margin: 0.5em 0.3em;
-    border: 0.3em double rgb(180, 55, 151);
+    margin: 0.5em 1em;
+    border: 0.1em solid rgb(180, 55, 151);
 }
 
 .question {
@@ -86,4 +103,13 @@ button {
 }
 button:hover {
     background-color: rgb(180, 55, 151);
+}
+
+/*///----------------- Viewport < 980px ----------------///*/
+@media screen and (max-width: 980px) {
+    fieldset {
+        display: inline-block;
+        width: 85%;
+        margin: 0.5em 1em;
+    }
 }
