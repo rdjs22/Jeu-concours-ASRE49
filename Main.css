@@ -1,3 +1,7 @@
+/*bleu google rgb(67, 136, 244)
+vert google rgb(33, 164, 102)
+jaune google rgb(255, 225, 80)*/
+
 *, html, body {
     font-family: Verdana, Arial, sans-serif;
 	font-size: 2.5vmin;
@@ -22,39 +26,45 @@ h1 {
     margin: 2em;
 }
 
+#questionnaire {
+    text-align: center;
+}
+
 /*------------- Renseignements -------------*/
 
 p:not(.question) {
     font-size: 1.1em;
     margin: 1.3em 0.3em 0.7em 0.3em;
-    border-bottom: 0.1em solid rgb(180, 55, 151);
+    border-bottom: 0.1em solid rgb(33, 164, 102);
 }
 
 input[type=text], input[type=email], select {
     padding: 0.3em;
     margin:  0.3em 0em;
     border: none;
-    border-bottom: 0.1em solid rgb(180, 55, 151);
+    border-bottom: 0.1em solid rgb(255, 225, 80);
 }
 input[type=text]:focus, input[type=email]:focus, select:focus {
     outline: none;
-    background-color: rgb(243, 208, 235);
+    background-color: rgba(255, 226, 80, 0.275);
 }
 
 input[type=number] {
     padding: 0.3em;
     margin:  0.3em 0em;
     border: none;
-    border-bottom: 0.1em solid rgb(180, 55, 151);
+    border-bottom: 0.1em solid rgb(67, 136, 244);
 }
 
 /*---------------- Questions ---------------*/
 fieldset {
     display: inline-block;
-    min-width: 41vw;
-    background-color: rgb(243, 208, 235);
+    text-align: left;
+    width: 41vw;
+    background-color: rgb(255, 255, 255);
     margin: 0.5em 1em;
-    border: 0.1em solid rgb(180, 55, 151);
+    border: 0.1em solid rgb(33, 164, 102);
+    border-radius: 0.1em;
 }
 
 .question {
@@ -79,30 +89,30 @@ input[type="checkbox"] {
     /*custom checkbox non sélectionnées */
     width: 1em;
     height: 1em;
-    border: 0.14em solid rgb(180, 55, 151);
+    border: 0.14em solid rgb(67, 136, 244);
     border-radius: 0.15em;
 }
 input[type="checkbox"]:hover {
-    background-color: rgb(243, 208, 235);
+    background-color: rgba(67, 135, 244, 0.335);
 }
 
 /*custom checkbox sélectionnée*/
 input[type="checkbox"]:checked {
     height: 1em;
-    border-color: rgb(180, 55, 151);
-    background-color: rgb(180, 55, 151);
+    background-color: rgb(67, 136, 244);
 }
 
 /*----------- Boutons ----------*/
 button {
-    background-color: rgb(243, 208, 235);
-    border: 0.15em solid rgb(180, 55, 151);
+    background-color: rgb(255, 255, 255);
+    border: 0.15em solid rgb(67, 136, 244);
     border-radius: 0.1em;
-    padding: 0.1em 0.3em;
+    padding: 0.3em 0.5em;
     margin: 0.3em;
 }
 button:hover {
-    background-color: rgb(180, 55, 151);
+    background-color: rgb(67, 136, 244);
+    color: white;
 }
 
 /*///----------------- Viewport < 980px ----------------///*/
