@@ -40,7 +40,7 @@ h1 {
 
 /*------------- Renseignements -------------*/
 
-p:not(.question) {
+.sous-titre {
     font-size: 1.1em;
     margin: 1.3em 0.3em 0.7em 0.3em;
     border-bottom: 0.1em solid rgb(33, 164, 102);
@@ -89,7 +89,7 @@ label {
     display: block;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"] {
     /* Cacher checkbox originale*/
     -webkit-appearance: none;
     appearance: none;  
@@ -101,12 +101,12 @@ input[type="checkbox"] {
     border: 0.14em solid rgb(67, 136, 244);
     border-radius: 0.15em;
 }
-input[type="checkbox"]:hover {
+input[type="checkbox"]:hover, input[type="radio"]:hover {
     background-color: rgba(67, 135, 244, 0.335);
 }
 
 /*custom checkbox sélectionnée*/
-input[type="checkbox"]:checked {
+input[type="checkbox"]:checked, input[type="radio"]:checked {
     height: 1em;
     background-color: rgb(67, 136, 244);
 }
@@ -138,3 +138,29 @@ button:hover {
         margin: 0.5em 1em;
     }
 }
+
+/*---------------------------------------------- Page 2 --------------------------------------------*/
+h2 {
+    border-top: 0.05em solid rgb(33, 164, 102);
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: normal;
+    font-style: italic;
+    margin: 1.5em 1em;
+    padding-top: 1em;
+}
+
+p:has(a) {
+    text-align: center;
+}
+
+a:link {
+    color: rgb(67, 136, 244);
+    font-size: 1.4em;
+}
+a:hover {
+    color: rgb(255, 225, 80);
+}
+/*a:visited {
+    color: rgb(67, 136, 244);
+}*/
