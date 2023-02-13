@@ -44,6 +44,11 @@ h1 {
     color: black;
     text-decoration: underline rgb(33, 164, 102);
 }
+#livret:hover {
+    font-size: 1.3em;
+    color: rgb(33, 164, 102);
+    text-decoration: underline rgb(33, 164, 102);
+}
 
 /*------------- Renseignements -------------*/
 
