@@ -38,6 +38,13 @@ h1 {
     text-align: center;
 }
 
+#livret {
+    font-size: 1.3em;
+    margin: 0.3em;
+    color: black;
+    text-decoration: underline rgb(33, 164, 102);
+}
+
 /*------------- Renseignements -------------*/
 
 .sous-titre {
@@ -46,13 +53,13 @@ h1 {
     border-bottom: 0.1em solid rgb(33, 164, 102);
 }
 
-input[type=text], input[type=email], select {
+input[type=text], input[type=date], select {
     padding: 0.3em;
     margin:  0.3em 0em;
     border: none;
     border-bottom: 0.1em solid rgb(255, 225, 80);
 }
-input[type=text]:focus, input[type=email]:focus, select:focus {
+input[type=text]:focus, input[type=date]:focus, select:focus {
     outline: none;
     background-color: rgba(255, 226, 80, 0.275);
 }
@@ -140,17 +147,24 @@ button:hover {
 }
 
 /*---------------------------------------------- Page 2 --------------------------------------------*/
-h2 {
+
+.message {
     border-top: 0.05em solid rgb(33, 164, 102);
+    text-align: center;
+    margin: 1.5em 1em;
+    padding-top: 4em;
+}
+
+h2 {
     text-align: center;
     font-size: 2.5em;
     font-weight: normal;
     font-style: italic;
-    margin: 1.5em 1em;
-    padding-top: 1em;
+    margin: 2.5em 1em;
 }
 
-p:has(a) {
+/*lien*/
+p:has(a) {      
     text-align: center;
 }
 
@@ -158,9 +172,9 @@ a:link {
     color: rgb(67, 136, 244);
     font-size: 1.4em;
 }
+a:visited {
+    color: rgb(67, 136, 244);
+}
 a:hover {
     color: rgb(255, 225, 80);
 }
-/*a:visited {
-    color: rgb(67, 136, 244);
-}*/

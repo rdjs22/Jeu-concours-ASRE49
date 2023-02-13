@@ -15,6 +15,7 @@
         <h1>Concours sécurité routière ASRE49</h1>
         <img src="Images/dessin_route.png" alt="dessin d'une route" class="deco">
     </header>
+    <a id="livret" href="Documents\chp 1 - intro - algo v5 - sept2019.pdf" target="_blank">Livret pédagogique</a>
     <form id="formulaire">
         <p class="sous-titre">Vos informations :</p>
         <label>
@@ -28,8 +29,8 @@
         </label>
 
         <label>
-            Adresse e-mail :
-            <input type="email" id="email" name="email">
+            Date de naissance :
+            <input type="date" id="naissance" name="naissance">
         </label>
         <!---->
         <label>
@@ -137,7 +138,7 @@
         </div>
 <!---->
         <button type="submit" name="sauvegarder" id="sauvegarder">Sauvegarder</button>
-        <button type="submit" name="envoyer" id="envoyer">Valider les réponses</button>
+        <button type="submit" name="envoyer" id="envoyer" formaction="Fini.html">Valider les réponses</button>
 
     </form>
 
