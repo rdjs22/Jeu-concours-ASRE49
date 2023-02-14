@@ -1,0 +1,23 @@
+a.truc, #ggg, #truc {
+    display: block;
+    width: 20em;
+    background-color: rgb(67, 136, 244);
+    border: 0.15em solid rgb(67, 136, 244);
+    border-radius: 0.1em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 1em 0.5em;
+    margin: 1em;
+    font-size: 1.1em;
+}
+a.truc:hover, #ggg:hover, #truc:hover {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border: 0.15em solid rgb(67, 136, 244);
+    border-radius: 0.1em;
+    color: rgb(67, 136, 244);
+    /*padding: 1em 0.5em;
+    margin: 1em;
+    font-size: 1.1em;*/
+}
