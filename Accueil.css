@@ -1,5 +1,22 @@
+p {
+    text-align: center;
+}
+
+#logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    width: 15em;
+    margin: 1em auto;
+}
+
 a.truc, #ggg, #truc {
     display: block;
+    position: relative;
     width: 20em;
     background-color: rgb(67, 136, 244);
     border: 0.15em solid rgb(67, 136, 244);
@@ -8,7 +25,7 @@ a.truc, #ggg, #truc {
     text-align: center;
     text-decoration: none;
     padding: 1em 0.5em;
-    margin: 1em;
+    margin: 1em auto;
     font-size: 1.1em;
 }
 a.truc:hover, #ggg:hover, #truc:hover {
