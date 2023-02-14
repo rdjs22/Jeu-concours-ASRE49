@@ -76,6 +76,27 @@ input[type=number] {
     border-bottom: 0.1em solid rgb(67, 136, 244);
 }
 
+/*Case de collecte de données*/
+input[type="checkbox"].collecte_donnees {
+    border-color: rgb(255, 225, 80);
+}
+input[type="checkbox"].collecte_donnees:hover {
+    background-color: rgba(255, 226, 80, 0.275);
+}
+input[type="checkbox"].collecte_donnees:checked {
+    background-color: rgb(255, 225, 80);
+}
+
+/*Texte collece de données*/
+.petit {
+    font-size: 0.7em;
+    margin-top: 1em;
+}
+.ppetit {
+    font-size: 1em;
+    margin: 0em 0em 0em 1.8em;
+}
+
 /*---------------- Questions ---------------*/
 fieldset {
     display: inline-block;

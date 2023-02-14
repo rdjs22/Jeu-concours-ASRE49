@@ -32,7 +32,7 @@
             Date de naissance :
             <input type="date" id="naissance" name="naissance">
         </label>
-        <!---->
+
         <label>
             Entreprise :
             <select id="entreprise" name="entreprise">
@@ -42,6 +42,14 @@
                 <option value="C">Entrep C</option>
                 <option value="D">Entrep D</option>
             </select>
+        </label>
+        
+        <label class="petit">
+            <input class="collecte_donnees" type ="checkbox" name="collecte_donnees" id="collecte_donnees">
+            Je consens à l'utilisation des données collectées par l'ASRE49 pour le bon déroulement du jeu-concours. 
+            <p class="ppetit">Le prestataire s'engage à ne pas réutiliser les données fournies à des fins commerciales.</p>
+            <p class="ppetit">Jeu limité à un seul bulletin par salarié.</p>  
+            <p class="ppetit">Règlement complet du jeu disponible auprès du correspondant ASRE49 de votre entreprise.</p>
         </label>
         
         <p class="sous-titre">Questionnaire :</p>
@@ -136,7 +144,7 @@
                 </label>
             </fieldset>
         </div>
-<!---->
+
         <button type="submit" name="sauvegarder" id="sauvegarder">Sauvegarder</button>
         <button type="submit" name="envoyer" id="envoyer" formaction="Fini.html">Valider les réponses</button>
 
