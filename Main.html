@@ -16,7 +16,7 @@
         <img src="Images/dessin_route.png" alt="dessin d'une route" class="deco">
     </header>
     <p>Accédez au <a id="livret" href="Documents\chp 1 - intro - algo v5 - sept2019.pdf" target="_blank">Livret pédagogique</a></p>
-    <form id="formulaire">
+    <form id="formulaire" method="post" action="https://script.google.com/macros/s/AKfycbyZOODr2meKxl1jO80W5D1KC6dnC-bT11mtDxAPXrUgl68Bnbf4Bj_yqHcMh4KUo3tRMA/exec">
         <p class="sous-titre">Vos informations :</p>
         <label>
             Nom :
@@ -57,17 +57,17 @@
         <div id="questionnaire">
 
             <fieldset>
-                <p class="question">Question choix multiples</p>
+                <p class="question">Question 1:</p>
                 <label class="form-control">
-                    <input type="checkbox" id="A" name="R1" value="A">
+                    <input type="checkbox" id="A" name="Q1" value="A">
                     Réponse A
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="B" name="R2" value="B">
+                    <input type="checkbox" id="B" name="Q1" value="B">
                     Réponse B
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="C" name="R3" value="C">
+                    <input type="checkbox" id="C" name="Q1" value="C">
                     Réponse C
                 </label>
             </fieldset>
@@ -87,15 +87,15 @@
             <fieldset>
                 <p class="question">Question choix multiples</p>
                 <label class="form-control">
-                    <input type="checkbox" id="A" name="R1" value="A">
+                    <input type="checkbox" id="F" name="R1" value="F">
                     Réponse A
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="B" name="R2" value="B">
+                    <input type="checkbox" id="G" name="R2" value="G">
                     Réponse B
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="C" name="R3" value="C">
+                    <input type="checkbox" id="H" name="R3" value="H">
                     Réponse C
                 </label>
             </fieldset>
@@ -103,15 +103,15 @@
             <fieldset>
                 <p class="question">Question choix multiples Question choix multiples Question choix multiples Question choix multiples</p>
                 <label class="form-control">
-                    <input type="checkbox" id="A" name="R1" value="A">
+                    <input type="checkbox" id="I" name="R1" value="I">
                     Réponse A
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="B" name="R2" value="B">
+                    <input type="checkbox" id="J" name="R2" value="J">
                     Réponse B
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="C" name="R3" value="C">
+                    <input type="checkbox" id="K" name="R3" value="K">
                     Réponse C
                 </label>
             </fieldset>
@@ -119,19 +119,19 @@
             <fieldset>
                 <p class="question">Question choix multiples Question choix multiples</p>
                 <label class="form-control">
-                    <input type="checkbox" id="A" name="R1" value="A">
+                    <input type="checkbox" id="L" name="R1" value="L">
                     Réponse A
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="B" name="R2" value="B">
+                    <input type="checkbox" id="M" name="R2" value="M">
                     Réponse B
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="C" name="R3" value="C">
+                    <input type="checkbox" id="N" name="R3" value="N">
                     Réponse C
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="D" name="R4" value="D">
+                    <input type="checkbox" id="O" name="R4" value="O">
                     Réponse D
                 </label>
             </fieldset>
@@ -150,7 +150,12 @@
 
     </form>
 
-    <script type="text/javascript" src="https://code.jquerry.com/jquery-3.4.1.js"> </script>
+    <!-- <script>
+        function envoi_reponses() {
+            action="https://script.google.com/macros/s/AKfycbyZOODr2meKxl1jO80W5D1KC6dnC-bT11mtDxAPXrUgl68Bnbf4Bj_yqHcMh4KUo3tRMA/exec"
+        }
+    </script> -->
+    <!-- <script type="text/javascript" src="https://code.jquerry.com/jquery-3.4.1.js"> </script>
     <script type="text/javascript" src="jQuery.serializeObject.js" ></script>
 
     <script type="text/javascript">
@@ -168,7 +173,7 @@
 
             });
             });
-        </script>
+        </script> -->
     
 </body>
 </html>
