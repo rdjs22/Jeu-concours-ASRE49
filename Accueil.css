@@ -1,5 +1,12 @@
+#boutonQuest {
+    margin-top: 4em;
+}
+
 p {
     text-align: center;
+    font-size: 1.2em;
+    margin-top: 2em;
+    margin-bottom: 0;
 }
 
 #logos {
@@ -14,7 +21,7 @@ p {
     margin: 1em auto;
 }
 
-a.truc, #ggg, #truc {
+a.truc {
     display: block;
     position: relative;
     width: 20em;
@@ -28,7 +35,7 @@ a.truc, #ggg, #truc {
     margin: 1em auto;
     font-size: 1.1em;
 }
-a.truc:hover, #ggg:hover, #truc:hover {
+a.truc:hover {
     display: block;
     background-color: rgb(255, 255, 255);
     border: 0.15em solid rgb(67, 136, 244);
