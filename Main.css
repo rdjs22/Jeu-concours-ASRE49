@@ -2,6 +2,9 @@
 vert google rgb(33, 164, 102)
 jaune google rgb(255, 225, 80)
 https://fr.qr-code-generator.com/a1/?msclkid=16fbc285ccae192bb585a16ebf6222d4&AdId=71674624435442&BidMatchType=be&CampaignId=431126805&TargetId=kwd-71675141929826:loc-66&QueryString=qr%20code%20gratuit&IfSearch:string=string&keyword=cr%C3%A9er%20un%20qr%20code%20gratuit&MatchType=e&AdGroupId=1146791572208505&cpid=2f9edc9f-4d94-4d4a-9de9-0274209e84f5&utm_source=bing&utm_medium=cpc&utm_campaign=FR%20-%20QR%20Code%20Global&utm_term=cr%C3%A9er%20un%20qr%20code%20gratuit&utm_content=FR%20-%20QR%20Code%20Global
+vert ASRE #45D88A  rgb(69, 216, 138)
+bleu clair ASRE #2B9CFC  rgb(43, 156, 252)
+bleu foncé ASRE #030069  rgb(3, 0, 105)
 */
 
 *, html, body {
@@ -15,18 +18,18 @@ body {
 }
 
 #logo_ASRE49 {
-    height: 4em;
+    height: 5em;
     position: absolute;
-    top: 2em;
+    top: 1em;
     left: 1em;
 }
 
 .deco {
-    max-height: 10em;
+    max-height: 8em;
     max-width: 21vw;
     position: absolute;
     top: 0em;
-    right: 0em;
+    right: -0.1em;
 }
 
 h1 {
@@ -43,13 +46,13 @@ h1 {
 #livret {
     font-size: 1.3em;
     margin: 0.3em;
-    color: black;
-    text-decoration: underline rgb(33, 164, 102);
+    color: rgb(3, 0, 105);
+    text-decoration: underline rgb(43, 156, 252);
 }
 #livret:hover {
     font-size: 1.3em;
-    color: rgb(33, 164, 102);
-    text-decoration: underline rgb(33, 164, 102);
+    color: rgb(43, 156, 252);
+    text-decoration: underline rgb(43, 156, 252);
 }
 
 /*------------- Renseignements -------------*/
@@ -57,36 +60,36 @@ h1 {
 .sous-titre {
     font-size: 1.1em;
     margin: 1.3em 0.3em 0.7em 0.3em;
-    border-bottom: 0.1em solid rgb(33, 164, 102);
+    border-bottom: 0.1em solid rgb(3, 0, 105);
 }
 
 input[type=text], input[type=date], select {
     padding: 0.3em;
     margin:  0.3em 0em;
     border: none;
-    border-bottom: 0.1em solid rgb(255, 225, 80);
+    border-bottom: 0.1em solid rgb(69, 216, 138);
 }
 input[type=text]:focus, input[type=date]:focus, select:focus {
     outline: none;
-    background-color: rgba(255, 226, 80, 0.275);
+    background-color: rgba(69, 216, 138, 0.275);
 }
 
 input[type=number] {
     padding: 0.3em;
     margin:  0.3em 0em;
     border: none;
-    border-bottom: 0.1em solid rgb(67, 136, 244);
+    border-bottom: 0.1em solid rgb(43, 156, 252);
 }
 
 /*Case de collecte de données*/
 input[type="checkbox"].collecte_donnees {
-    border-color: rgb(255, 225, 80);
+    border-color: rgb(69, 216, 138);
 }
 input[type="checkbox"].collecte_donnees:hover {
-    background-color: rgba(255, 226, 80, 0.275);
+    background-color: rgba(69, 216, 138, 0.275);
 }
 input[type="checkbox"].collecte_donnees:checked {
-    background-color: rgb(255, 225, 80);
+    background-color: rgb(69, 216, 138);
 }
 
 /*Texte collece de données*/
@@ -106,7 +109,7 @@ fieldset {
     width: 41vw;
     background-color: rgb(255, 255, 255);
     margin: 0.5em 1em;
-    border: 0.1em solid rgb(33, 164, 102);
+    border: 0.1em solid rgb(3, 0, 105);
     border-radius: 0.1em;
 }
 
@@ -133,23 +136,23 @@ input[type="checkbox"], input[type="radio"] {
     /*custom checkbox non sélectionnées */
     width: 1em;
     height: 1em;
-    border: 0.14em solid rgb(67, 136, 244);
+    border: 0.14em solid rgb(43, 156, 252);
     border-radius: 0.15em;
 }
 input[type="checkbox"]:hover, input[type="radio"]:hover {
-    background-color: rgba(67, 135, 244, 0.335);
+    background-color: rgba(43, 156, 252, 0.335);
 }
 
 /*custom checkbox sélectionnée*/
 input[type="checkbox"]:checked, input[type="radio"]:checked {
     height: 1em;
-    background-color: rgb(67, 136, 244);
+    background-color: rgb(43, 156, 252);
 }
 
 /*----------- Boutons ----------*/
 button {
     background-color: rgb(255, 255, 255);
-    border: 0.15em solid rgb(67, 136, 244);
+    border: 0.15em solid rgb(43, 156, 252);
     border-radius: 0.1em;
     padding: 0.3em 0.5em;
     margin: 0.3em;
@@ -157,7 +160,7 @@ button {
 
 }
 button:hover {
-    background-color: rgb(67, 136, 244);
+    background-color: rgb(43, 156, 252);
     color: white;
 }
 
@@ -177,9 +180,9 @@ button:hover {
 /*---------------------------------------------- Page 2 --------------------------------------------*/
 
 .message {
-    border-top: 0.05em solid rgb(33, 164, 102);
+    border-top: 0.1em solid rgb(3, 0, 105);
     text-align: center;
-    margin: 1.5em 1em;
+    margin: 4em 1em 0em;
     padding-top: 4em;
 }
 
@@ -197,12 +200,12 @@ p:has(a) {
 }
 
 a:link {
-    color: rgb(67, 136, 244);
+    color: rgb(43, 156, 252);
     font-size: 1.4em;
 }
 a:visited {
-    color: rgb(67, 136, 244);
+    color: rgb(43, 156, 252);
 }
 a:hover {
-    color: rgb(255, 225, 80);
+    color: rgb(69, 216, 138);
 }
