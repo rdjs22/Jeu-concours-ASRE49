@@ -21,6 +21,17 @@ p {
     width: 15em;
     margin: 0em auto;
 }
+@media screen and (max-width: 1140px) {
+    /*pas tous les logos sur 1 ligne*/
+    #logos {
+        display: inline-block;
+        padding: 0 10vw;
+        text-align: center;
+    }
+    .logo {
+        padding: 1em;
+    }
+}
 
 a.boutonsAccueil {
     display: block;
