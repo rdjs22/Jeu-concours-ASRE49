@@ -8,6 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Main.css">
     <title>ASRE49 - Questionnaire</title>
+    <!--Envoyer les données ET rediriger vers la page de remerciements--
+    <script>    
+        function submitFormAndRedirect() {
+          // Submit the form data
+          document.getElementById('formulaire').submit();
+          // Redirect the user to the thank you page
+          window.location.href = 'Fini.html';
+        }
+        </script> 
+    -->       
 </head>
 <body>
     <header>
@@ -17,7 +27,7 @@
         <img src="Images\route_ASRE49_logo.png" alt="dessin d'une route" class="deco">
     </header>
     <p>Accédez au <a id="livret" href="Documents\chp 1 - intro - algo v5 - sept2019.pdf" target="_blank">Livret pédagogique</a></p>
-    <form id="formulaire" method="post" action="https://script.google.com/macros/s/AKfycbxXM7YWCJlfaiiSbC3qhYQ7aNs79oJkYRQs0ORP0AU-lfGkKVVCILd3fYwpO-NDTOmDpw/exec">
+    <form id="formulaire" method="post" action="https://script.google.com/macros/s/AKfycbw-1dBcia7hHBoy2WmNuEhp8LPqBHC9-DIGntJyoM-KEUPXTVkEANkdPZ8Ynqcuvdt2SQ/exec">
         <p class="sous-titre">Vos informations :</p>
         <label>
             Nom :
@@ -146,8 +156,8 @@
             </fieldset>
         </div>
 
-        <button type="submit" name="sauvegarder" id="sauvegarder">Sauvegarder</button>
-        <button type="submit" name="envoyer" id="envoyer" formaction="Fini.html">Valider les réponses</button>
+        <!--<button type="submit" name="sauvegarder" id="sauvegarder">Sauvegarder</button>-->
+        <button type="submit" name="envoyer" id="envoyer" onclick="submitFormAndRedirect()">Valider les réponses</button>
 
     </form>
 
