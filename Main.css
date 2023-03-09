@@ -170,6 +170,10 @@ button:hover {
     background-color: rgb(43, 156, 252);
     color: white;
 }
+.clique, .clique:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(131, 131, 131);
+}
 
 #sauvegarder {
     margin-left: 2em;       /*écarter les 2 bouttons du bord gauche*/

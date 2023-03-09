@@ -8,16 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Main.css">
     <title>ASRE49 - Questionnaire</title>
-    <!--Envoyer les données ET rediriger vers la page de remerciements--
-    <script>    
-        function submitFormAndRedirect() {
-          // Submit the form data
-          document.getElementById('formulaire').submit();
-          // Redirect the user to the thank you page
-          window.location.href = 'Fini.html';
-        }
-        </script> 
-    -->       
+        
 </head>
 <body>
     <header>
@@ -27,7 +18,7 @@
         <img src="Images\route_ASRE49_logo.png" alt="dessin d'une route" class="deco">
     </header>
     <p>Accédez au <a id="livret" href="Documents\chp 1 - intro - algo v5 - sept2019.pdf" target="_blank">Livret pédagogique</a></p>
-    <form id="formulaire" method="post" action="https://script.google.com/macros/s/AKfycbxkiWSVGdYEaC09GdjbfJdVtpqUKZueKKPGsp09K659rX9J6N6HzCvssMDxr6XBqgkufQ/exec">
+    <form id="formulaire" method="post" action="https://script.google.com/macros/s/AKfycbyVkzw9Qi3X6LEQQknwGbEDTyU8aCCgs6IEKFinyNse344SJ1ZvjQ77_5v7nBqDCv4wrw/exec">
         <p class="sous-titre">Vos informations :</p>
         <label>
             Nom :
@@ -243,34 +234,36 @@
         </div>
 
         <!--<button type="submit" name="sauvegarder" id="sauvegarder">Sauvegarder</button>-->
-        <button type="submit" name="envoyer" id="envoyer" onclick="submitFormAndRedirect()">Valider les réponses</button>
+        <button type="submit" name="envoyer" id="envoyer">Valider les réponses</button>
 
     </form>
 
-    <!-- <script>
-        function envoi_reponses() {
-            action="https://script.google.com/macros/s/AKfycbyZOODr2meKxl1jO80W5D1KC6dnC-bT11mtDxAPXrUgl68Bnbf4Bj_yqHcMh4KUo3tRMA/exec"
-        }
-    </script> -->
-    <!-- <script type="text/javascript" src="https://code.jquerry.com/jquery-3.4.1.js"> </script>
-    <script type="text/javascript" src="jQuery.serializeObject.js" ></script>
-
-    <script type="text/javascript">
-        var $form=$('form#formulaire'), 
-        url = 'https://script.google.com/macros/s/AKfycbzgPVXIxjLMEzqehaoezd7wjrRFjRS2Jfx5PAYDC97otWQWQiAwJAb_IwVzSK9yn03mdw/exec'; 
-
-        $('#envoyer').on('click', function(e) {
-            e.preventDefault(); 
-            var jqxhr = $.ajax({
-                url:  "url", 
-                method: "GET", 
-                dataType: "json", 
-                data: $form.serializedObject()
-            }).done(function(){
-
-            });
-            });
-        </script> -->
+    <script>
+        document
+          .getElementById("formulaire")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Empêcher la soumission par défaut
+            var btn = document.getElementById("envoyer");   //'selectionner' le boutton d'envoi
+            btn.disabled=true;                              //Désactiver le boutton d'envoie après qu'on ait cliqué
+            btn.classList.add("clique");                    //Utilise la classe "clique" du CSS sur le boutton
+            // Récupérer les données du formulaire
+            var formData = new FormData(this);
+  
+            // Effectuer une requête AJAX POST pour exécuter l'AppScript
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", this.action);
+            xhr.send(formData);
+  
+            // Rediriger l'utilisateur vers une nouvelle page une fois que la requête a été résolue avec succès
+            xhr.onload = function () {
+              if (xhr.status === 200) {
+                // vérifier que la requête ait abouti avec succès
+                window.location.href =
+                  "https://rdjs22.github.io/activ-esaip/Fini.html";
+              }
+            };
+          });
+      </script>
     
 </body>
 </html>
