@@ -27,7 +27,7 @@
         <img src="Images\route_ASRE49_logo.png" alt="dessin d'une route" class="deco">
     </header>
     <p>Accédez au <a id="livret" href="Documents\chp 1 - intro - algo v5 - sept2019.pdf" target="_blank">Livret pédagogique</a></p>
-    <form id="formulaire" method="post" action="https://script.google.com/macros/s/AKfycbyPfFXtbUYnZWAlGC2FMUFA3K1PVrbVEfpoPg8VT_R1Wr7hVwm89YtLyh2q6C-PREcFew/exec">
+    <form id="formulaire" method="post" action="https://script.google.com/macros/s/AKfycbxkiWSVGdYEaC09GdjbfJdVtpqUKZueKKPGsp09K659rX9J6N6HzCvssMDxr6XBqgkufQ/exec">
         <p class="sous-titre">Vos informations :</p>
         <label>
             Nom :
@@ -66,92 +66,178 @@
         <p class="sous-titre">Questionnaire :</p>
 
         <div id="questionnaire">
-
             <fieldset>
-                <p class="question">Question 1:</p>
+                <p class="question"> Il est interdit de conduire en France avec un taux d’alcool :</p>
                 <label class="form-control">
-                    <input type="checkbox" id="A" name="Q1" value="A">
-                    Réponse A
+                    <input type="checkbox" id="A" name="Q1A" value="A">
+                    supérieur ou égal à 0,5 g/l de sang 
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="B" name="Q1" value="B">
-                    Réponse B
+                    <input type="checkbox" id="B" name="Q1B" value="B">
+                    supérieur ou égal à 0,25 mg/l d’air expiré 
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="C" name="Q1" value="C">
-                    Réponse C
+                    <input type="checkbox" id="C" name="Q1C" value="C">
+                    supérieur ou égal à 0,5 mg/l de sang 
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" id="C" name="Q1D" value="D">
+                    supérieur ou égal à 0,25 g/l d’air expiré  
                 </label>
             </fieldset>
             
             <fieldset>
-                <p class="question">Question choix unique</p>
+                <p class="question">En ville les EDPM doivent se déplacer :</p>
                 <label class="form-control">
-                    <input type="radio" id="D" name="unique" value="D">
-                    Réponse D
+                    <input type="checkbox" id="D" name="Q2A" value="D">
+                    Uniquement sur les pistes cyclables
                 </label>
                 <label class="form-control">
-                    <input type="radio" id="E" name="unique" value="E">
-                    Réponse E
+                    <input type="checkbox" id="E" name="Q2B" value="E">
+                    Uniquement sur la route
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" id="E" name="Q2C" value="E">
+                    Les deux sont possibles
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" id="E" name="Q2D" value="E">
+                    Sur les trottoirs
                 </label>
             </fieldset>
             
             <fieldset>
-                <p class="question">Question choix multiples</p>
+                <p class="question">Lors d’un déplacement pour une mission le salarié a obligation de respecter</p>
                 <label class="form-control">
-                    <input type="checkbox" id="F" name="R1" value="F">
-                    Réponse A
+                    <input type="checkbox" id="F" name="Q3A" value="F">
+                    Le code de la route
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="G" name="R2" value="G">
-                    Réponse B
+                    <input type="checkbox" id="G" name="Q3B" value="G">
+                    Le règlement intérieur de l’entreprise
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="H" name="R3" value="H">
-                    Réponse C
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <p class="question">Question choix multiples Question choix multiples Question choix multiples Question choix multiples</p>
-                <label class="form-control">
-                    <input type="checkbox" id="I" name="R1" value="I">
-                    Réponse A
-                </label>
-                <label class="form-control">
-                    <input type="checkbox" id="J" name="R2" value="J">
-                    Réponse B
-                </label>
-                <label class="form-control">
-                    <input type="checkbox" id="K" name="R3" value="K">
-                    Réponse C
+                    <input type="checkbox" id="H" name="Q3C" value="H">
+                    Les deux
                 </label>
             </fieldset>
 
             <fieldset>
-                <p class="question">Question choix multiples Question choix multiples</p>
+                <p class="question">Combien doit-il y avoir de sticker angle mort sur un poids lourd ?</p>
                 <label class="form-control">
-                    <input type="checkbox" id="L" name="R1" value="L">
-                    Réponse A
+                    <input type="checkbox" id="I" name="Q4A" value="I">
+                    2
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="M" name="R2" value="M">
-                    Réponse B
+                    <input type="checkbox" id="J" name="Q4B" value="J">
+                    4
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="N" name="R3" value="N">
-                    Réponse C
+                    <input type="checkbox" id="K" name="Q4C" value="K">
+                    6
                 </label>
                 <label class="form-control">
-                    <input type="checkbox" id="O" name="R4" value="O">
-                    Réponse D
+                    <input type="checkbox" id="K" name="Q4D" value="K">
+                    8
                 </label>
             </fieldset>
 
             <fieldset>
-                <p class="question">Question choix unique</p>
+                <p class="question"> Afin d'assurer une régularité dans l'entretien de ma voiture, je dois prendre en compte:</p>
+                <label class="form-control">
+                    <input type="checkbox" id="L" name="Q5A" value="L">
+                    Le kilométrage
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" id="M" name="Q5B" value="M">
+                    La vieillesse du véhicule
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" id="N" name="Q5C" value="N">
+                    Le modèle
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" id="O" name="Q5D" value="O">
+                    La consommation de carburant
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <p class="question">Votre voisin affirme : “il est inutile d’éteindre le moteur quand le véhicule n’est à l’arrêt que
+                    pendant quelques minutes” <br>
+                    Pourquoi à t’il tort ? : </p>
+                <label class="form-control">
+                    <input type="checkbox" id="L" name="Q6A" value="L">
+                    Car un redémarrage du moteur consomme tout le temps moins que de laisser tourner
+                </label>                
+                <label class="form-control">
+                    <input type="checkbox" id="N" name="Q6B" value="N">
+                    Car au-delà de 20 secondes, le moteur consomme plus au redémarrage
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" id="O" name="Q6C" value="O">
+                    Car au-delà de 20 secondes, le moteur consomme moins au redémarrage
+                </label>
+
+            </fieldset>
+
+
+            <fieldset>
+                <p class="question">Vous vous retrouvez dans la nécessité absolue de vous arrêter/stationner sur un accotement
+                    ou une bande d'arrêt d'urgence. Comment procédez-vous ? </p>
+                <label class="form-control">
+                    <input type="checkbox" id="L" name="Q7A" value="L">
+                    Rien, il est interdit de stationner ou de s’arrêter même en cas de nécessité absolue
+                </label>                
+                <label class="form-control">
+                    <input type="checkbox" id="M" name="Q7B" value="M">
+                    Vous assurez la pré-signalisation du véhicule et vous vous mettez en sécurité derrière les 
+                    barrières de sécurité                    
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" id="N" name="Q7C" value="N">
+                    Vous assurez la pré-signalisation du véhicule et vous attendez dans votre véhicule que le 
+                    dégagement d’urgence soit réalisé    
+                </label>
+            </fieldset>
+            <fieldset>
+                <p class="question">Comment réagir suite à l’annonce d’une bretelle de sortie sur une autoroute à deux voies ? </p>
+                <label class="form-control">
+                    <input type="checkbox" id="L" name="Q8A" value="L">
+                    Je me trouve sur la voie de gauche et emprunte la bretelle de sortie dès que possible
+                </label>                
+                <label class="form-control">
+                    <input type="checkbox" id="M" name="Q8B" value="M">
+                    Je me trouve sur la voie de droite et m’engage sur la bretelle de sortie à la fin de celle-ci
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" id="N" name="Q8C" value="N">
+                    Je me trouve sur la voie de droite et m’engage sur la bretelle de sortie dès que possible
+                </label>
+            </fieldset>
+            <fieldset>
+                <p class="question"> Vous vous déplacez en voiture sur une voie de tram autorisée, quelle signalétique devez-vous suivre ?
+                     </p>
+                <label class="form-control">
+                    <input type="checkbox" id="L" name="Q9A" value="L">
+                    Aucune 
+                </label>                
+                <label class="form-control">
+                    <input type="checkbox" id="M" name="Q9B" value="M">
+                    La nouvelle : selon les règles de circulation du tram
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" id="N" name="Q9C" value="N">
+                    Les voies de tram sont toujours interdites à la circulation des voitures
+
+                </label>
+            </fieldset>
+
+            <fieldset>  
+                    <p>D'après-vous combien y a t-il eu de participant l'année dernière ?</p>  
                 <label>
                     Votre réponse : 
-                    <input type ="number" name="Q15" id="Q15">
+                    <input type ="text" name="Q15" id="Q15">
                 </label>
             </fieldset>
         </div>
