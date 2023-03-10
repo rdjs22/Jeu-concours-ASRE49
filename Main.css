@@ -113,16 +113,17 @@ input[type="checkbox"].collecte_donnees:checked {
 fieldset {
     display: inline-block;
     text-align: left;
-    width: 41vw;
+    width: 85%;
+    /*width: 41vw;*/
     background-color: rgb(255, 255, 255);
-    margin: 0.5em 1em;
+    margin: 0.5em 1.5em;
     border: 0.1em solid rgb(3, 0, 105);
     border-radius: 0.1em;
 }
 
 .question {
     font-size: 1.1em;
-    margin-top: 0.5em;
+    margin: 0.5em 0.2em;
 }
 
 label {
@@ -181,12 +182,12 @@ button:hover {
 
 /*///----------------- Viewport < 1015px ----------------///*/
 @media screen and (max-width: 1015px) {
-    /*1 question par ligne*/
+    /*1 question par ligne*//*
     fieldset {
         display: inline-block;
         width: 85%;
         margin: 0.5em 1em;
-    }
+    }*/
 
     /*Change pour le logo vertical*/
     .logo_ASRE49_horiz {
