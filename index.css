@@ -18,7 +18,8 @@ p {
 
 .logo {
     display: inline-block;
-    width: 15em;
+    max-width: 15em;
+    max-height: 9em;
     margin: 0em auto;
 }
 @media screen and (max-width: 1140px) {
